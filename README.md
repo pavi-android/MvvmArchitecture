@@ -2,8 +2,9 @@
 
  
 This application covers below topics:
- 1.MVVM design pattern.
- 2.Recycler view using cardview
+
+ 1.MVVM design pattern.\n
+ 2.Recycler view using cardview \n
  3.Retrofit for network call
  4.Android architecture component - LiveData and ViewModel.
  5.Picasso for image loading.
