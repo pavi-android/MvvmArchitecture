@@ -10,6 +10,7 @@ import lookat.example.tushar.allstatemobile.repository.HerosRepository
 class HeroViewModel : ViewModel() {
 
     //private val _herosResult = MutableLiveData<HerosModel>()
+    //private val _herosResult = MutableLiveData<HerosModel>()
     var herosResult: LiveData<List<HerosModel>> = HerosRepository().getHerosList()
 
 //    fun getHerosList(): LiveData<HerosModel> {
