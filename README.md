@@ -8,6 +8,8 @@ This application covers below topics:
  3.Retrofit for network call  
  4.Android architecture component - LiveData and ViewModel.  
  5.Picasso for image loading.
+ 6.Comments are added for better understanding.
+
 
    
 
