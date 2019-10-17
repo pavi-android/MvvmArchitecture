@@ -19,8 +19,6 @@ class HerosRepository {
 
             override fun onResponse(call: Call<List<HerosModel>>, response: Response<List<HerosModel>>) {
                 result.value = response.body()
-
-                Log.i("onFailure",""+result.value)
             }
 
             override fun onFailure(call: Call<List<HerosModel>>, t: Throwable) {

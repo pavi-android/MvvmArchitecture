@@ -1,10 +1,14 @@
 package lookat.example.tushar.mvvmdemoapp.ui
 
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import lookat.example.tushar.allstatemobile.model.HerosModel
 import lookat.example.tushar.allstatemobile.ui.adaptors.HerosAdapter
 import lookat.example.tushar.allstatemobile.viewmodel.HeroViewModel
@@ -27,10 +31,16 @@ class HerosActivity : AppCompatActivity() {
             setListToAdaptor(heroList)
         })
 
+
     }
 
     private fun setListToAdaptor(heroList: List<HerosModel>?) {
         val herosAdapter = HerosAdapter(heroList)
+        if (this.resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            heroRecycler?.setLayoutManager(LinearLayoutManager(this))
+        } else {
+            heroRecycler?.setLayoutManager(GridLayoutManager(this, 2))
+        }
         heroRecycler?.setAdapter(herosAdapter)
 
     }
