@@ -9,7 +9,7 @@ This application covers below topics:
  4.Android architecture component - LiveData and ViewModel.  
  5.Picasso for image loading.  
  6.Cashing with retrofit - Store response offline.  
- 7.Handle screen orientatation
+ 7.Handle screen orientatation.  
  8.Comments are added for better understanding.
 
 
