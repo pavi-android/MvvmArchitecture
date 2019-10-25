@@ -12,9 +12,12 @@ import javax.security.auth.callback.Callback
 
 class HerosRepository {
 
+
+    //Network Call using Retrofit
     fun getHerosList(): LiveData<List<HerosModel>>{
 
         val result =  MutableLiveData<List<HerosModel>>()
+
         ServerConnection().getConnection().getHeroes().enqueue(object : retrofit2.Callback<List<HerosModel>> {
 
             override fun onResponse(call: Call<List<HerosModel>>, response: Response<List<HerosModel>>) {

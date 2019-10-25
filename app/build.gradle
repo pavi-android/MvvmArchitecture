@@ -37,11 +37,17 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
 
-    // implementation "androidx.lifecycle:lifecycle-extensions:2.0.0-rc01"
+    // okhttp
+    def okHttpVersion = "3.11.0"
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
 
+    //for livedata and viewmodel
     def lifecycle_version = "2.1.0"
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    //recyclerview
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //cardview
     implementation 'androidx.cardview:cardview:1.0.0'
 
     //Picasso
