@@ -47,6 +47,8 @@ class ServerConnection {
             .build()
     }
 
+
+    //This interceptor will be called both if the network is available and if the network is not available
     private fun offlineInterceptor(): Interceptor {
 
         return Interceptor { chain ->
@@ -67,6 +69,7 @@ class ServerConnection {
 
     }
 
+    //This interceptor will be called ONLY if the network is available
     private fun networkInterceptor(): Interceptor {
 
         return Interceptor { chain ->
